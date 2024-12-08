@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap'); 
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 180vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #2a2a40, #4b4b6b);
+  color: #ffffff;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 900px;
+  background: #1e1e30;
+  padding: 60px;
+  border-radius: 10px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffd700;
+  animation: fall 1.5s ease-out forwards;
+  opacity: 1;
+}
+
+@keyframes fall {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffd700;
+  margin: 40px auto;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  text-align: center;
+  width: fit-content;
+  position: relative;
+  overflow: hidden;
+  height: 3.5rem;
+}
+
+.typing-animation::after {
+  content: "Welcome to Encrypto";
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 4s steps(22, end), blink 0.7s step-end infinite;
+  border-right: 2px solid #ffd700;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ffd700;
+  }
+}
+
+.animate-fall {
+  animation: fall 2.0s ease-out forwards;
+  position: relative;
+  opacity: 100;
+}
+
+@keyframes fall {
+  0% {
+    opacity: 0;
+    transform: translateY(-120px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.logo-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffd700;
+  margin: 20px auto;
+  display: block;
+  position: relative;
+  top: -20px;
+}
+
+.form-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s ease;
+  background: #2e2e4a;
+  border: 1px solid #ffd700;
+  color: #ffffff;
+  box-sizing: border-box;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+select:focus {
+  border: 1px solid #4a90e2;
+}
+
+.text-area,
+.result-area {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s ease;
+  background-color: #f7faff;
+  border: 1px solid #ffd700;
+  color: #333333;
+  box-sizing: border-box;
+  height: 120px;
+  margin-bottom: 15px;
+}
+
+.text-area:focus,
+.result-area:focus {
+  border: 1px solid #4a90e2;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #4a90e2;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.btn:hover {
+  background-color: #6aa9f5;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.result-area {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ffd700;
+  background-color: #f7faff;
+  color: #333333;
+  height: 120px;
+  outline: none;
+  transition: border 0.3s ease;
+  margin-top: 15px;
+}
+
+.result-area:focus {
+  border: 1px solid #4a90e2;
+}
